@@ -14,7 +14,7 @@ footer {
   color: Gray;
   font-size: 25px; }
   .footer-icon:not(:first-child) {
-    padding-left: 20px; }
+    margin-left: 20px; }
 
 .content-wrapper {
   padding-bottom: 15px;

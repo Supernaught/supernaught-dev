@@ -10,12 +10,9 @@ html, body {
   position: relative; }
 
 .facebook-icon:hover {
-  color: #6279B1; }
+  color: #222; }
 
 .twitter-icon:hover {
-  color: #1dcaff; }
-
-.instagram-icon:hover {
-  color: #8a3ab9; }
+  color: #222; }
 
 /*# sourceMappingURL=index.css.map */
