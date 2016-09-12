@@ -61,7 +61,17 @@ footer{
     margin-bottom: 3px;
     font-size: 13px;
     color: Gray;
+    text-decoration: none;
+
+    & > .mdi{
+      padding-right: 5px;
+    }
   }
+}
+
+a.contact-detail:hover{
+  color: #222;
+  text-decoration: underline;
 }
 
 .copyright-info{
@@ -94,5 +104,8 @@ footer{
   }
   .copyright-info{
     text-align: center;
+  }
+  .contact-detail > .mdi{
+    display: none;
   }
 }

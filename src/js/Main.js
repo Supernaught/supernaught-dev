@@ -16,11 +16,31 @@ class Main extends Component {
                 <h4>Contact</h4>
                 <div className="contact-info">
                   <h6>Alfonz Montelibano</h6>
-                  <p className="contact-detail">alfonz.m@gmail.com</p>
+                  <p className="contact-detail">
+                    <i className="mdi mdi-email-outline"></i>
+                    m.alfonz@gmail.com
+                  </p>
+                  <a
+                    className="contact-detail"
+                    href="http://alfonzm.github.io"
+                    target="*">
+                      <i className="mdi mdi-earth"></i>
+                      alfonzm.github.io
+                  </a>
                 </div>
                 <div className="contact-info">
                   <h6>Davy Jones Bolivar</h6>
-                  <p className="contact-detail">davy.bolivar@gmail.com</p>
+                  <p className="contact-detail">
+                    <i className="mdi mdi-email-outline"></i>
+                    davy.bolivar@gmail.com
+                  </p>
+                  <a
+                    className="contact-detail"
+                    href="http://davybolivar.github.io"
+                    target="*">
+                      <i className="mdi mdi-earth"></i>
+                      davybolivar.github.io
+                  </a>
                 </div>
               </div>
               <div className="section">
