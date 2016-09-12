@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-
-// components
 import About from './js/Pages/About';
 import Game from './js/Pages/Game';
 import Home from './js/Pages/Home';

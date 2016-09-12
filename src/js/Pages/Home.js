@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
+import '../../styles/css/Home.css';
 
 class Home extends Component {
   constructor(props) {
@@ -22,6 +23,26 @@ class Home extends Component {
       {
         id: 'grimlocks-lair',
         name: 'Grimlock Lair'
+      },
+      {
+        id: 'adrift',
+        name: 'Adrift'
+      },
+      {
+        id: 'pong-knights',
+        name: 'Pong Knights'
+      },
+      {
+        id: 'blockade-arcade',
+        name: 'Blockade Arcade'
+      },
+      {
+        id: 'necromorph',
+        name: 'Necromorph'
+      },
+      {
+        id: 'jumpr',
+        name: 'Jumpr'
       }
     ];
 
@@ -41,7 +62,17 @@ class Home extends Component {
       )
     });
     return (
-      <div className="Home">
+      <div className="Home page-component">
+        <div
+          className="banner-wrapper"
+          style={{backgroundImage: 'url("")'}}>
+          <h1 className="title">Supernaught</h1>
+          <span className="motto">We make games for fun</span>
+        </div>
+        <nav>
+          <IndexLink to="/" activeClassName="active">Home</IndexLink>
+          <Link to="/about" activeClassName="active">About</Link>
+        </nav>
         Home Page
         <ul>
           {gameList}

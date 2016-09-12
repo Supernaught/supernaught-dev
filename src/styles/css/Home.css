@@ -1,0 +1,13 @@
+.google-icons {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga'; }
+
+.banner-wrapper {
+  height: 600px;
+  background-color: Tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=Home.css.map */
