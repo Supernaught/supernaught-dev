@@ -8,7 +8,8 @@ a.active {
 
 footer {
   width: 100%;
-  color: #222; }
+  color: #222;
+  background-color: #f0f0f0; }
 
 .footer-icon {
   color: Gray;
@@ -18,18 +19,20 @@ footer {
 
 .content-wrapper {
   padding-bottom: 15px;
-  width: 100%;
-  background-color: #f0f0f0; }
+  width: 100%; }
   .content-wrapper > .content {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
     max-width: 900px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; }
     .content-wrapper > .content > .section {
       display: block; }
+
+footer .content-wrapper > .content {
+  flex-direction: row; }
 
 .contact-info {
   display: inline-block;
@@ -60,10 +63,10 @@ a.contact-detail:hover {
   font-size: 11px; }
 
 @media screen and (max-width: 600px) {
-  .content-wrapper > .content {
+  footer > .content-wrapper > .content {
     width: 100%;
     flex-direction: column; }
-    .content-wrapper > .content > .section {
+    footer > .content-wrapper > .content > .section {
       padding: 10px;
       display: flex;
       flex-direction: column;

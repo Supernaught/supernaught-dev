@@ -62,21 +62,27 @@ class Home extends Component {
       )
     });
     return (
-      <div className="Home page-component">
+      <div className="Home content-wrapper">
         <div
           className="banner-wrapper"
           style={{backgroundImage: 'url("")'}}>
           <h1 className="title">Supernaught</h1>
           <span className="motto">We make games for fun</span>
         </div>
-        <nav>
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/about" activeClassName="active">About</Link>
-        </nav>
-        Home Page
-        <ul>
-          {gameList}
-        </ul>
+        <div className="content">
+          <nav>
+            <IndexLink to="/" activeClassName="active">Home</IndexLink>
+            <Link to="/about" activeClassName="active">About</Link>
+          </nav>
+          Home Page
+          <ul>
+            {gameList}
+          </ul>
+          <h3 className="section-label">And few other games...</h3>
+          <ul className="game-list">
+            {gameList}
+          </ul>
+        </div>
       </div>
     );
   }

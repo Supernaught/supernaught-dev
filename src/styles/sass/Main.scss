@@ -8,6 +8,7 @@ a.active{
 footer{
   width: 100%;
   color: #222;
+  background-color: $custom-gray;
 }
 
 .footer-icon{
@@ -22,7 +23,6 @@ footer{
 .content-wrapper{
   padding-bottom: 15px;
   width: 100%;
-  background-color: $custom-gray;
 
   & > .content{
     padding-left: 10px;
@@ -30,12 +30,18 @@ footer{
     margin: 0 auto;
     max-width: $content-width;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
     & > .section{
       display: block;
     }
+  }
+}
+
+footer{
+  & .content-wrapper > .content{
+    flex-direction: row;
   }
 }
 
@@ -81,8 +87,8 @@ a.contact-detail:hover{
 }
 
 // Mobile
-@media screen and (max-width: 600px) {
-  .content-wrapper > .content{
+@media screen and (max-width: $mobile-width-scope) {
+  footer > .content-wrapper > .content{
     width: 100%;
     flex-direction: column;
 
