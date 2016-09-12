@@ -13,8 +13,21 @@
   font-size: 50px;
 }
 
+.featured-game-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  & > li{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #222;
+  }
+}
+
 .game-list{
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 20px 20px;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -47,6 +60,9 @@
 
 // Mobile
 @media screen and (max-width: $mobile-width-scope) {
+  .Home > .content{
+    padding: 0 !important;
+  }
   .section-label{
     text-align: center;
   }

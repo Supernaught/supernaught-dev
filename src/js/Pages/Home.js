@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, IndexLink } from 'react-router';
+import FeaturedGame from '../Components/FeaturedGame';
 import '../../styles/css/Home.css';
 
 class Home extends Component {
@@ -53,12 +54,7 @@ class Home extends Component {
     const shortid = require('shortid');
     const gameList = this.state.games.map((game) => {
       return (
-        <li key={shortid.generate()}>
-          <Link
-            to={'/'+game.id}>
-            {game.name}
-          </Link>
-        </li>
+        <FeaturedGame key={shortid.generate()} info={game} />
       )
     });
     return (
@@ -75,7 +71,7 @@ class Home extends Component {
             <Link to="/about" activeClassName="active">About</Link>
           </nav>
           Home Page
-          <ul>
+          <ul className="featured-game-list">
             {gameList}
           </ul>
           <h3 className="section-label">And few other games...</h3>
