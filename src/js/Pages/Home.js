@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link, IndexLink } from 'react-router';
+import ShortId from 'shortid';
+import GameData from '../../datas/games.js';
 import FeaturedGame from '../Components/FeaturedGame';
 import '../../styles/css/Home.css';
 
@@ -11,52 +13,22 @@ class Home extends Component {
     };
   }
 
-  componentDidMount() {
-    const data = [
-      {
-        id: 'mono',
-        name: 'Mono'
-      },
-      {
-        id: 'hammerfall',
-        name: 'Hammerfall'
-      },
-      {
-        id: 'grimlocks-lair',
-        name: 'Grimlock Lair'
-      },
-      {
-        id: 'adrift',
-        name: 'Adrift'
-      },
-      {
-        id: 'pong-knights',
-        name: 'Pong Knights'
-      },
-      {
-        id: 'blockade-arcade',
-        name: 'Blockade Arcade'
-      },
-      {
-        id: 'necromorph',
-        name: 'Necromorph'
-      },
-      {
-        id: 'jumpr',
-        name: 'Jumpr'
-      }
-    ];
-
-    this.setState({games: data});
-  }
-
   render() {
-    const shortid = require('shortid');
-    const gameList = this.state.games.map((game) => {
+    const gameDataList = GameData.games;
+    const featuredGameList = gameDataList.featured.map((game) => {
       return (
-        <FeaturedGame key={shortid.generate()} info={game} />
+        <FeaturedGame key={ShortId.generate()} data={game} />
       )
     });
+
+    const otherList = gameDataList.other.map((game) => {
+      return (
+        <li key={ShortId.generate()}>
+          <Link to={'/'+game.id}>{game.name}</Link>
+        </li>
+      )
+    });
+
     return (
       <div className="Home content-wrapper">
         <div
@@ -72,11 +44,11 @@ class Home extends Component {
           </nav>
           Home Page
           <ul className="featured-game-list">
-            {gameList}
+            {featuredGameList}
           </ul>
           <h3 className="section-label">And few other games...</h3>
           <ul className="game-list">
-            {gameList}
+            {otherList}
           </ul>
         </div>
       </div>
