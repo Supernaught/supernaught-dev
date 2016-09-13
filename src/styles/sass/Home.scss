@@ -39,13 +39,14 @@
 
   & > li{
     & > a{
+      padding: 5px;
       font-size: 14px;
       color: Gray;
       text-decoration: none;
 
       &:hover{
-        color: #222;
-        text-decoration: underline;
+        color: white;
+        background-color: $theme-color;
       }
     }
 

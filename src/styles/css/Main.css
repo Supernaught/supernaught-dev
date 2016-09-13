@@ -1,7 +1,9 @@
-.google-icons {
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga'; }
-
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/fonts/FuturaStd-Bold.otf); }
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Medium.otf); }
 a.active {
   color: white;
   background-color: Tomato; }
@@ -54,7 +56,7 @@ footer .content-wrapper > .content {
       padding-right: 5px; }
 
 a.contact-detail:hover {
-  color: #222;
+  color: Tomato;
   text-decoration: underline; }
 
 .copyright-info {

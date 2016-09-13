@@ -1,8 +1,16 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/fonts/FuturaStd-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Medium.otf);
+}
+
 $content-width: 900px;
+$theme-color: Tomato;
 $custom-gray: #f0f0f0;
 $mobile-width-scope: 600px;
-
-.google-icons{
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga';
-}
+$default-font: 'Futura';
+$secondary-font: 'Futura-Light';

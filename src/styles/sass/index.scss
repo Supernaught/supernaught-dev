@@ -4,16 +4,21 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   position: relative;
+  font-family: $secondary-font;
 }
 
 .facebook-icon:hover{
-  color: #222;
+  color: $theme-color;
   // color: #6279B1;
 }
 
 .twitter-icon:hover{
-  color: #222;
+  color: $theme-color;
   // color: #1dcaff;
+}
+
+h1, h2, h3 , h4, h5, h6{
+  font-family: $default-font;
+  text-transform: uppercase;
 }

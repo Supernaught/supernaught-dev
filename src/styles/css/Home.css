@@ -1,8 +1,10 @@
 @charset "UTF-8";
-.google-icons {
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga'; }
-
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/fonts/FuturaStd-Bold.otf); }
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Medium.otf); }
 .banner-wrapper {
   height: 600px;
   background-color: #222;
@@ -35,12 +37,13 @@
   flex-wrap: wrap;
   line-height: 30px; }
   .game-list > li > a {
+    padding: 5px;
     font-size: 14px;
     color: Gray;
     text-decoration: none; }
     .game-list > li > a:hover {
-      color: #222;
-      text-decoration: underline; }
+      color: white;
+      background-color: Tomato; }
   .game-list > li:not(:first-child):before {
     content: "·";
     font-size: 30px;
