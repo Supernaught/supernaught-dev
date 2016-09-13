@@ -6,7 +6,8 @@
   src: url(../assets/fonts/Inconsolata-Regular.ttf); }
 @font-face {
   font-family: 'Inconsolata-Bold';
-  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
+  src: url(../assets/fonts/Inconsolata-Bold.ttf);
+  font-weight: 700; }
 a.active {
   color: white;
   background-color: Tomato; }
