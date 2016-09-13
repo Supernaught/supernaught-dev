@@ -2,14 +2,17 @@
   font-family: 'Futura';
   src: url(../assets/fonts/FuturaStd-Bold.otf); }
 @font-face {
-  font-family: 'Futura-Light';
-  src: url(../assets/fonts/FuturaStd-Medium.otf); }
+  font-family: 'Inconsolata-Regular';
+  src: url(../assets/fonts/Inconsolata-Regular.ttf); }
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: "Futura-Light"; }
+  font-family: "Inconsolata-Regular"; }
 
 .facebook-icon:hover {
   color: #FF0054; }
@@ -22,5 +25,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Futura";
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+b {
+  color: #FF0054;
+  font-family: "Inconsolata-Bold"; }
 
 /*# sourceMappingURL=index.css.map */

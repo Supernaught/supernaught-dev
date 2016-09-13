@@ -31,6 +31,10 @@ class Home extends Component {
 
     return (
       <div className="Home content-wrapper">
+        <nav>
+          <IndexLink to="/" activeClassName="active">Home</IndexLink>
+          <Link to="/about" activeClassName="active">About</Link>
+        </nav>
         <div
           className="banner-wrapper"
           style={{backgroundImage: 'url("")'}}>
@@ -38,18 +42,22 @@ class Home extends Component {
           <span className="motto">We make games for fun</span>
         </div>
         <div className="content">
-          <nav>
-            <IndexLink to="/" activeClassName="active">Home</IndexLink>
-            <Link to="/about" activeClassName="active">About</Link>
-          </nav>
-          Home Page
-          <ul className="featured-game-list">
-            {featuredGameList}
-          </ul>
-          <h3 className="section-label">And few other games...</h3>
-          <ul className="game-list">
-            {otherList}
-          </ul>
+          <div className="section-wrapper">
+            <div className="team-summary-wrapper">
+              Short summary
+            </div>
+          </div>
+          <div className="section-wrapper">
+            <ul className="featured-game-list">
+              {featuredGameList}
+            </ul>
+          </div>
+          <div className="section-wrapper">
+            <h3 className="section-label">And few other games...</h3>
+            <ul className="game-list">
+              {otherList}
+            </ul>
+          </div>
         </div>
       </div>
     );

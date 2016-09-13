@@ -3,8 +3,11 @@
   font-family: 'Futura';
   src: url(../assets/fonts/FuturaStd-Bold.otf); }
 @font-face {
-  font-family: 'Futura-Light';
-  src: url(../assets/fonts/FuturaStd-Medium.otf); }
+  font-family: 'Inconsolata-Regular';
+  src: url(../assets/fonts/Inconsolata-Regular.ttf); }
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
 .banner-wrapper {
   height: 600px;
   background-color: #222;
@@ -71,6 +74,11 @@
     opacity: .8; }
   .featured-game:active:before {
     opacity: .8; }
+
+.section-wrapper {
+  padding-bottom: 35px; }
+  .section-wrapper:first-child {
+    padding-top: 35px; }
 
 .game-list {
   padding: 0px 20px 20px 20px;
