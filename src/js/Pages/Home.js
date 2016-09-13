@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { Link } from 'react-router';
 import ShortId from 'shortid';
 import GameData from '../../datas/games.js';
+import Header from '../Components/Header';
 import FeaturedGame from '../Components/FeaturedGame';
 import '../../styles/css/Home.css';
 
@@ -31,29 +32,22 @@ class Home extends Component {
 
     return (
       <div className="Home content-wrapper">
-        <nav>
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/about" activeClassName="active">About</Link>
-        </nav>
         <div
           className="banner-wrapper"
           style={{backgroundImage: 'url("")'}}>
           <h1 className="title">Supernaught</h1>
           <span className="motto">We make games for fun</span>
         </div>
+        <Header />
         <div className="content">
           <div className="section-wrapper">
-            <div className="team-summary-wrapper">
-              Short summary
-            </div>
-          </div>
-          <div className="section-wrapper">
+            <h3 className="section-label">Our games</h3>
             <ul className="featured-game-list">
               {featuredGameList}
             </ul>
           </div>
           <div className="section-wrapper">
-            <h3 className="section-label">And few other games...</h3>
+            <h3 className="section-label">And few others...</h3>
             <ul className="game-list">
               {otherList}
             </ul>

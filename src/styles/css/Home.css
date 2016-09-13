@@ -1,14 +1,18 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Futura';
-  src: url(../assets/fonts/FuturaStd-Bold.otf); }
+  src: url(../assets/fonts/FuturaStd-Bold.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Light.otf);
+  font-weight: 200; }
 @font-face {
   font-family: 'Inconsolata-Regular';
   src: url(../assets/fonts/Inconsolata-Regular.ttf); }
 @font-face {
   font-family: 'Inconsolata-Bold';
-  src: url(../assets/fonts/Inconsolata-Bold.ttf);
-  font-weight: 700; }
+  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
 .banner-wrapper {
   height: 600px;
   background-color: #222;
@@ -19,6 +23,53 @@
 
 .title {
   font-size: 50px; }
+
+header {
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out; }
+  header .nav-container {
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    header .nav-container > a {
+      color: #222;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      word-spacing: -5px; }
+      header .nav-container > a:not(:last-child) {
+        margin-right: 20px; }
+      header .nav-container > a:not(.active):hover {
+        color: LightGray; }
+      header .nav-container > a:not(.active):active {
+        color: LightPink; }
+  header.sticky {
+    background-color: #FF0054;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+    header.sticky + * {
+      padding-top: 50px; }
+    header.sticky > .nav-container > a {
+      color: #222; }
+      header.sticky > .nav-container > a.active {
+        color: white; }
+      header.sticky > .nav-container > a:not(.active):hover {
+        color: LightPink; }
 
 .featured-game-list {
   padding: 0;
@@ -31,6 +82,7 @@
   margin-bottom: 20px;
   background-color: #f0f0f0;
   text-align: center;
+  text-decoration: none;
   border: solid 1px transparent;
   display: flex;
   flex-direction: column;
@@ -59,12 +111,13 @@
   .featured-game > .thumbnail-title {
     margin: 20px 0px 20px 0px;
     letter-spacing: 2px; }
-  .featured-game > .thumbnail-category > span:not(:first-child):before {
-    content: "·";
-    color: #FF0054;
-    padding: 0px 10px 0px 10px;
-    font-size: 30px;
-    vertical-align: middle; }
+  .featured-game > .thumbnail-category {
+    margin-bottom: 10px; }
+    .featured-game > .thumbnail-category > span:not(:first-child):before {
+      content: "■";
+      color: #FF0054;
+      padding: 0px 10px 0px 10px;
+      vertical-align: middle; }
   .featured-game > .thumbnail-platform {
     font-size: 20px; }
     .featured-game > .thumbnail-platform > i:not(:first-child) {
@@ -98,9 +151,8 @@
     .game-list > li > a:hover, .game-list > li > a:active {
       color: #FF0054; }
   .game-list > li:not(:first-child):before {
-    content: "·";
+    content: "■";
     color: #FF0054;
-    font-size: 30px;
     margin: 0 10px 0 10px;
     vertical-align: top; }
 

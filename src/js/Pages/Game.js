@@ -6,7 +6,6 @@ class Game extends Component {
     window.scrollTo(0, 0);
   }
   render() {
-    console.log(this.props.params.data);
     return (
       <div className="Game page-component">
         <nav>

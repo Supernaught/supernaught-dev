@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'Futura';
   src: url(../assets/fonts/FuturaStd-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Light.otf);
+  font-weight: 200;
 }
 
 @font-face {
@@ -11,7 +18,6 @@
 @font-face {
   font-family: 'Inconsolata-Bold';
   src: url(../assets/fonts/Inconsolata-Bold.ttf);
-  font-weight: 700;
 }
 
 $content-width: 900px;
@@ -19,5 +25,6 @@ $theme-color: #FF0054;
 $custom-gray: #f0f0f0;
 $mobile-width-scope: 600px;
 $default-font: 'Futura';
+$default-font-light: 'Futura-Light';
 $bold-font: 'Inconsolata-Bold';
 $secondary-font: 'Inconsolata-Regular';

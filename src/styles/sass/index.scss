@@ -8,6 +8,10 @@ html, body {
   font-family: $secondary-font;
 }
 
+nav a.active{
+  color: $theme-color;
+}
+
 .facebook-icon:hover{
   color: $theme-color;
   // color: #6279B1;

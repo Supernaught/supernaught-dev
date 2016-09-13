@@ -13,6 +13,77 @@
   font-size: 50px;
 }
 
+header{
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+
+  -webkit-transition: background-color .2s ease-out;
+     -moz-transition: background-color .2s ease-out;
+       -o-transition: background-color .2s ease-out;
+          transition: background-color .2s ease-out;
+
+  & .nav-container{
+    max-width: $content-width;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & > a{
+      color: #222;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      word-spacing: -5px;
+
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+
+      &:not(.active){
+        &:hover{
+          color: LightGray;
+        }
+
+        &:active{
+          color: LightPink;
+        }
+      }
+    }
+  }
+
+  &.sticky{
+    background-color: $theme-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    & + *{
+      padding-top: 50px;
+    }
+
+    & > .nav-container > a{
+      color: #222;
+
+      &.active{
+        color: white;
+      }
+
+      &:not(.active):hover{
+        color: LightPink;
+      }
+    }
+  }
+}
+
 .featured-game-list{
   padding: 0;
   margin: 0;
@@ -25,6 +96,7 @@
   margin-bottom: 20px;
   background-color: $custom-gray;
   text-align: center;
+  text-decoration: none;
   border: solid 1px transparent;
   display: flex;
   flex-direction: column;
@@ -60,12 +132,15 @@
     margin: 20px 0px 20px 0px;
     letter-spacing: 2px;
   }
-  & > .thumbnail-category > span:not(:first-child):before{
-    content: "·";
-    color: $theme-color;
-    padding: 0px 10px 0px 10px;
-    font-size: 30px;
-    vertical-align: middle;
+  & > .thumbnail-category{
+    margin-bottom: 10px;
+
+    & > span:not(:first-child):before{
+      content: "■";
+      color: $theme-color;
+      padding: 0px 10px 0px 10px;
+      vertical-align: middle;
+    }
   }
   & > .thumbnail-platform{
     font-size: 20px;
@@ -120,9 +195,8 @@
     }
 
     &:not(:first-child):before{
-      content: "·";
+      content: "■";
       color: $theme-color;
-      font-size: 30px;
       margin: 0 10px 0 10px;
       vertical-align: top;
     }
