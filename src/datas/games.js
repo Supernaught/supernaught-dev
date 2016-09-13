@@ -10,7 +10,7 @@ exports.games = {
 				"Ludum Dare"
 			],
 			"platforms": [
-				"windows", "apple"
+				"windows", "apple", "google-chrome", "apple-safari"
 			],
 			"image_count": 3,
 			"video_count": 1,
@@ -42,7 +42,8 @@ exports.games = {
 			"categories": [
 				"Platformer",
 				"Action",
-				"Ludum Dare"
+				"Ludum Dare",
+				"Game Jam"
 			],
 			"platforms": [
 				"windows", "apple"
@@ -145,6 +146,41 @@ exports.games = {
 		{
 			"name": "Necromorph",
 			"id": "necromorph",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Blockade Arcade",
+			"id": "blockade-arcade",
 			"description": "GAME OF AWSUM DAYUM",
 			"categories": [
 				"Platformer",

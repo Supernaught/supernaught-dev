@@ -17,13 +17,75 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
 
-  & > li{
+.featured-game{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: $custom-gray;
+  text-align: center;
+  border: solid 1px transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  &:before{
+    content: "";
     width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    background-color: #222;
-    cursor: pointer;
+    height: 100%;
+    opacity: .6;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+
+    -webkit-transition: opacity .2s ease-out;
+       -moz-transition: opacity .2s ease-out;
+         -o-transition: opacity .2s ease-out;
+            transition: opacity .2s ease-out;
+  }
+
+  & > *{
+    color: white;
+    z-index: 1;
+  }
+
+  & > .thumbnail-title{
+    margin: 20px 0px 20px 0px;
+    letter-spacing: 2px;
+  }
+  & > .thumbnail-category > span:not(:first-child):before{
+    content: "·";
+    color: $theme-color;
+    padding: 0px 10px 0px 10px;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  & > .thumbnail-platform{
+    font-size: 20px;
+
+    & > i:not(:first-child){
+      margin-left: 5px;
+    }
+  }
+
+  &:hover{
+    & > .thumbnail-title{
+      color: $theme-color;
+    }
+    &:before{
+      opacity: .8;
+    }
+  }
+
+  &:active:before{
+    opacity: .8;
   }
 }
 
@@ -40,19 +102,18 @@
 
   & > li{
     & > a{
-      padding: 5px;
-      font-size: 14px;
-      color: Gray;
+      font-size: 18px;
+      color: #222;
       text-decoration: none;
 
-      &:hover{
-        color: white;
-        background-color: $theme-color;
+      &:hover, &:active{
+        color: $theme-color;
       }
     }
 
     &:not(:first-child):before{
       content: "·";
+      color: $theme-color;
       font-size: 30px;
       margin: 0 10px 0 10px;
       vertical-align: top;

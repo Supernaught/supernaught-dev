@@ -12,7 +12,7 @@ footer{
 }
 
 .footer-icon{
-  color: Gray;
+  color: #222;
   font-size: 25px;
 
   &:not(:first-child){
@@ -62,6 +62,10 @@ footer{
     margin-bottom: 10px;
   }
 
+  & > .contact-name{
+    color: #222;
+  }
+
   & > .contact-detail{
     margin-top: 3px;
     margin-bottom: 3px;
@@ -75,14 +79,17 @@ footer{
   }
 }
 
-a.contact-detail:hover{
+.contact-detail:hover{
   color: $theme-color;
+}
+
+a.contact-detail:hover{
   text-decoration: underline;
 }
 
 .copyright-info{
   margin-top: 20px;
-  color: #222;
+  color: Gray;
   font-size: 11px;
 }
 

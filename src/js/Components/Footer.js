@@ -9,7 +9,7 @@ class Footer extends Component {
             <div className="section">
               <h4>Contact us</h4>
               <div className="contact-info">
-                <h6>Alfonz Montelibano</h6>
+                <h6 className="contact-name">Alfonz Montelibano</h6>
                 <p className="contact-detail">
                   <i className="mdi mdi-email-outline"></i>
                   m.alfonz@gmail.com
@@ -23,7 +23,7 @@ class Footer extends Component {
                 </a>
               </div>
               <div className="contact-info">
-                <h6>Davy Jones Bolivar</h6>
+                <h6 className="contact-name">Davy Jones Bolivar</h6>
                 <p className="contact-detail">
                   <i className="mdi mdi-email-outline"></i>
                   davy.bolivar@gmail.com

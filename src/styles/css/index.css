@@ -12,13 +12,15 @@ html, body {
   font-family: "Futura-Light"; }
 
 .facebook-icon:hover {
-  color: Tomato; }
+  color: #FF0054; }
 
 .twitter-icon:hover {
-  color: Tomato; }
+  color: #FF0054; }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #FF0054;
   font-family: "Futura";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=index.css.map */
