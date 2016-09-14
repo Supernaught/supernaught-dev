@@ -109,6 +109,11 @@ header{
 
     &.hide-nav{
       transform: translateY(-50px);
+
+      -webkit-transition: transform 0s ease-out;
+         -moz-transition: transform 0s ease-out;
+           -o-transition: transform 0s ease-out;
+              transition: transform 0s ease-out;
     }
 
     & + *{
