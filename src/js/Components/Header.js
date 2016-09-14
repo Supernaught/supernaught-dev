@@ -43,7 +43,7 @@ class Header extends Component {
     }
 
     // Check if scrollY is in the bottom page
-    if((window.innerHeight + document.body.scrollTop) ===
+    if((window.innerHeight + document.body.scrollTop) >=
         document.body.offsetHeight){
           this.setState({ hideTab: '' });
     }
