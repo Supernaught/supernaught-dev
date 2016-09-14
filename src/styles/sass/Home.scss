@@ -32,6 +32,8 @@
   font-size: 50px;
   word-break: break-all;
   text-align: center;
+  @include textGlitch("title", 200, $theme-color, transparent, blue, transparent, 406, 50);
+  // @include textGlitch("title", 100, $theme-color, white, yellow, blue, 450, 115);
 }
 
 .motto{
