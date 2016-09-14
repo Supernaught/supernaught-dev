@@ -33,11 +33,13 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #222;
-    opacity: .95; }
+    background-color: black;
+    opacity: .86; }
 
 .title {
-  font-size: 50px; }
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center; }
 
 .motto {
   color: white;
@@ -115,7 +117,6 @@ header {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
   text-align: center;
   text-decoration: none;
   border: solid 1px transparent;
@@ -126,7 +127,10 @@ header {
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .featured-game:before {
     content: "";
     width: 100%;
@@ -143,6 +147,16 @@ header {
   .featured-game > * {
     color: white;
     z-index: 1; }
+  .featured-game > .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; }
   .featured-game > .thumbnail-title {
     margin: 20px 0px 20px 0px;
     letter-spacing: 2px; }

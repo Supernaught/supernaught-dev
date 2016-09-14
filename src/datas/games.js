@@ -10,7 +10,7 @@ exports.games = {
 				"Ludum Dare"
 			],
 			"platforms": [
-				"windows", "apple", "google-chrome", "apple-safari"
+				"windows", "apple", "earth", "cellphone-iphone", "android"
 			],
 			"image_count": 3,
 			"video_count": 1,
