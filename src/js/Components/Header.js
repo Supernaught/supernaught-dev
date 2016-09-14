@@ -54,10 +54,13 @@ class Header extends Component {
   render() {
     return (
       <header className={this.state.stickyTab+ ' ' +this.state.hideTab}>
-        <nav className="nav-container">
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/about" activeClassName="active">About Supernaught</Link>
-        </nav>
+        <div className="nav-container">
+          <h3 className="header-title">Supernaught</h3>
+          <nav>
+            <IndexLink to="/" activeClassName="active">Home</IndexLink>
+            <Link to="/about" activeClassName="active">About Supernaught</Link>
+          </nav>
+        </div>
       </header>
     );
   }

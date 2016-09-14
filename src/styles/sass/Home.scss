@@ -32,28 +32,38 @@ header{
     align-items: center;
     justify-content: flex-end;
 
-    & > a{
-      color: #222;
-      font-size: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
+    & > .header-title{
+      color: white;
+      display: none;
+    }
+
+    & > nav{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      word-spacing: -5px;
+      flex-direction: row;
 
-      &:not(:last-child){
-        margin-right: 20px;
-      }
+      & > a{
+        color: #222;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        word-spacing: -5px;
 
-      &:not(.active){
-        &:hover{
-          color: LightGray;
+        &:not(:last-child){
+          margin-right: 20px;
         }
 
-        &:active{
-          color: LightPink;
+        &:not(.active){
+          &:hover{
+            color: LightGray;
+          }
+
+          &:active{
+            color: LightPink;
+          }
         }
       }
     }
@@ -79,15 +89,23 @@ header{
       padding-top: 50px;
     }
 
-    & > .nav-container > a{
-      color: #222;
+    & > .nav-container{
+      justify-content: space-between;
 
-      &.active{
-        color: white;
+      & > .header-title{
+        display: block;
       }
 
-      &:not(.active):hover{
-        color: LightPink;
+      & a{
+        color: #222;
+
+        &.active{
+          color: white;
+        }
+
+        &:not(.active):hover{
+          color: LightPink;
+        }
       }
     }
   }
@@ -219,5 +237,11 @@ header{
   }
   .section-label{
     text-align: center;
+  }
+  header > .nav-container, header.sticky > .nav-container{
+    justify-content: center;
+    & .header-title{
+      display: none !important;
+    }
   }
 }

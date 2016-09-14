@@ -40,22 +40,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
-    header .nav-container > a {
-      color: #222;
-      font-size: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
+    header .nav-container > .header-title {
+      color: white;
+      display: none; }
+    header .nav-container > nav {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      word-spacing: -5px; }
-      header .nav-container > a:not(:last-child) {
-        margin-right: 20px; }
-      header .nav-container > a:not(.active):hover {
-        color: LightGray; }
-      header .nav-container > a:not(.active):active {
-        color: LightPink; }
+      flex-direction: row; }
+      header .nav-container > nav > a {
+        color: #222;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        word-spacing: -5px; }
+        header .nav-container > nav > a:not(:last-child) {
+          margin-right: 20px; }
+        header .nav-container > nav > a:not(.active):hover {
+          color: LightGray; }
+        header .nav-container > nav > a:not(.active):active {
+          color: LightPink; }
   header.sticky {
     background-color: #FF0054;
     position: fixed;
@@ -70,12 +76,16 @@ header {
       transform: translateY(-50px); }
     header.sticky + * {
       padding-top: 50px; }
-    header.sticky > .nav-container > a {
-      color: #222; }
-      header.sticky > .nav-container > a.active {
-        color: white; }
-      header.sticky > .nav-container > a:not(.active):hover {
-        color: LightPink; }
+    header.sticky > .nav-container {
+      justify-content: space-between; }
+      header.sticky > .nav-container > .header-title {
+        display: block; }
+      header.sticky > .nav-container a {
+        color: #222; }
+        header.sticky > .nav-container a.active {
+          color: white; }
+        header.sticky > .nav-container a:not(.active):hover {
+          color: LightPink; }
 
 .featured-game-list {
   padding: 0;
@@ -167,6 +177,11 @@ header {
     padding: 0 !important; }
 
   .section-label {
-    text-align: center; } }
+    text-align: center; }
+
+  header > .nav-container, header.sticky > .nav-container {
+    justify-content: center; }
+    header > .nav-container .header-title, header.sticky > .nav-container .header-title {
+      display: none !important; } }
 
 /*# sourceMappingURL=Home.css.map */
