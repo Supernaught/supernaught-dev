@@ -46,7 +46,7 @@ exports.games = {
 				"Game Jam"
 			],
 			"platforms": [
-				"windows", "apple"
+				"windows"
 			],
 			"image_count": 3,
 			"video_count": 1,
