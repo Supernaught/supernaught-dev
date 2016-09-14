@@ -38,7 +38,7 @@ class Home extends Component {
           <h1 className="title">Supernaught</h1>
           <span className="motto">We make games for fun</span>
         </div>
-        <Header />
+        <Header startY={600} />
         <div className="content">
           <div className="section-wrapper">
             <h3 className="section-label">Our games</h3>

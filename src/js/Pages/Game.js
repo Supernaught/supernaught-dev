@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, IndexLink } from 'react-router';
+import Header from '../Components/Header';
 
 class Game extends Component {
   componentDidMount() {
@@ -8,10 +8,7 @@ class Game extends Component {
   render() {
     return (
       <div className="Game page-component">
-        <nav>
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/about" activeClassName="active">About</Link>
-        </nav>
+        <Header startY={0} />
         Game Page {this.props.params.game}
       </div>
     );
