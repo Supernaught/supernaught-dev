@@ -5,6 +5,7 @@ html, body {
   padding: 0;
   position: relative;
   font-family: $secondary-font;
+  box-sizing: border-box;
 }
 
 .nav-container > nav a.active{
