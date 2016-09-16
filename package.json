@@ -9,6 +9,7 @@
     "mdi": "^1.7.22",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-ga": "^2.1.2",
     "react-router": "^2.8.0",
     "shortid": "^2.2.6"
   },

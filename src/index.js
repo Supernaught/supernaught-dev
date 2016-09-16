@@ -9,8 +9,17 @@ import Main from './js/Main';
 // styles
 import './styles/css/index.css';
 
+// Google Analytics
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-84298907-1');
+
+function logPageView() {
+	ReactGA.set({ page: window.location.pathname })
+	ReactGA.pageview(window.location.pathname)
+}
+
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={browserHistory} onUpdate={logPageView} >
     <Route path="/" component={Main}>
       <IndexRoute component={Home} />
       <Route path="/about" component={About} />
