@@ -6,7 +6,7 @@ class Header extends Component {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.prevScroll = 0;
-    this.checkScroll = false;
+    this.checkScroll = true;
     this.state = {
       stickyTab: '',
       hideTab: ''
@@ -35,12 +35,18 @@ class Header extends Component {
     }
 
     // Check if scrolling up or down
-    if(this.state.stickyTab === 'sticky'){
-      if(scrollTop > this.prevScroll){
-        this.setState({ hideTab: 'hide-nav' });
-      } else{
-        this.setState({ hideTab: '' });
+    if(this.checkScroll){
+      this.checkScroll = false;
+      if(this.state.stickyTab === 'sticky'){
+        if(scrollTop > this.prevScroll || scrollTop <= this.props.startY){
+          this.setState({ hideTab: 'hide-nav' });
+        } else{
+          this.setState({ hideTab: '' });
+        }
       }
+      setTimeout(()=>{
+        this.checkScroll = true;
+      },300);
     }
 
     // Check if scrollY is in the bottom page

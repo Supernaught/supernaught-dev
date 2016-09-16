@@ -111,10 +111,10 @@ header{
     &.hide-nav{
       transform: translateY(-50px);
 
-      -webkit-transition: transform 0s ease-out;
-         -moz-transition: transform 0s ease-out;
-           -o-transition: transform 0s ease-out;
-              transition: transform 0s ease-out;
+      -webkit-transition: transform .2s ease-out;
+         -moz-transition: transform .2s ease-out;
+           -o-transition: transform .2s ease-out;
+              transition: transform .2s ease-out;
     }
 
     & + *{
@@ -225,17 +225,14 @@ header{
     }
   }
 
-  &:hover{
+  &:hover,
+  &:active{
     & > .thumbnail-title{
       color: $theme-color;
     }
     &:before{
       opacity: .8;
     }
-  }
-
-  &:active:before{
-    opacity: .8;
   }
 }
 
@@ -280,6 +277,9 @@ header{
 
 // Mobile
 @media screen and (max-width: $mobile-width-scope) {
+  .title{
+    font-size: 10vw;
+  }
   .Home > .content{
     padding: 0 !important;
   }

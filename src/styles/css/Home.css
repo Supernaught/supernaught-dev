@@ -99,10 +99,10 @@ header {
     transition: transform .2s ease-out; }
     header.sticky.hide-nav {
       transform: translateY(-50px);
-      -webkit-transition: transform 0s ease-out;
-      -moz-transition: transform 0s ease-out;
-      -o-transition: transform 0s ease-out;
-      transition: transform 0s ease-out; }
+      -webkit-transition: transform .2s ease-out;
+      -moz-transition: transform .2s ease-out;
+      -o-transition: transform .2s ease-out;
+      transition: transform .2s ease-out; }
     header.sticky + * {
       margin-top: 50px !important; }
     header.sticky > .nav-container {
@@ -179,11 +179,9 @@ header {
     font-size: 20px; }
     .featured-game > .thumbnail-platform > i:not(:first-child) {
       margin-left: 5px; }
-  .featured-game:hover > .thumbnail-title {
+  .featured-game:hover > .thumbnail-title, .featured-game:active > .thumbnail-title {
     color: #FF0054; }
-  .featured-game:hover:before {
-    opacity: .8; }
-  .featured-game:active:before {
+  .featured-game:hover:before, .featured-game:active:before {
     opacity: .8; }
 
 .section-wrapper {
@@ -214,6 +212,9 @@ header {
     vertical-align: top; }
 
 @media screen and (max-width: 600px) {
+  .title {
+    font-size: 10vw; }
+
   .Home > .content {
     padding: 0 !important; }
 
