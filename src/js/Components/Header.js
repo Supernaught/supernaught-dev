@@ -6,6 +6,7 @@ class Header extends Component {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.prevScroll = 0;
+    this.checkScroll = false;
     this.state = {
       stickyTab: '',
       hideTab: ''
