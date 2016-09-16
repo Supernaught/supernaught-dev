@@ -13,11 +13,11 @@ class Header extends Component {
     };
   }
   componentDidMount(){
-    if(this.props.startY > 0){
+    // if(this.props.startY > 0){
       window.addEventListener('scroll', this.handleScroll);
-    }else{
-      this.setState({ stickyTab: 'sticky' });
-    }
+    // }else{
+    //   this.setState({ stickyTab: 'sticky' });
+    // }
   }
   componentWillUnmount(){
     if(this.props.startY > 0){

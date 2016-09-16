@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     return (
       <div className="About content-wrapper">
-        <Header startY={0} />
+        <Header startY={30} />
         <div
           className="banner-wrapper"
           style={{
