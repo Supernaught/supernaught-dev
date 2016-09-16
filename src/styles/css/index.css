@@ -25,10 +25,7 @@ html, body {
 .nav-container > nav a.active {
   color: #FF0054; }
 
-.facebook-icon:hover {
-  color: #FF0054; }
-
-.twitter-icon:hover {
+.mdi:hover {
   color: #FF0054; }
 
 h1, h2, h3, h4, h5, h6 {

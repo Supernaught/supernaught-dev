@@ -17,7 +17,7 @@
   position: relative; }
 
 .banner-wrapper {
-  height: 600px;
+  padding: 0px 20px 0px 20px;
   background-color: #222;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,8 @@
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  box-sizing: border-box; }
   .banner-wrapper > * {
     z-index: 1; }
   .banner-wrapper:before {
@@ -37,16 +38,17 @@
     left: 0;
     top: 0;
     background-color: black;
-    opacity: .86; }
+    opacity: .7; }
 
 .title {
   font-size: 50px;
-  word-break: break-all;
+  word-break: break-word;
   text-align: center; }
 
-.motto {
+.banner-text {
   color: white;
-  font-size: 20px; }
+  font-size: 20px;
+  text-align: center; }
 
 header {
   padding: 0px 10px 0px 10px;

@@ -34,9 +34,12 @@ class Home extends Component {
       <div className="Home content-wrapper">
         <div
           className="banner-wrapper"
-          style={{backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")'}}>
+          style={{
+            backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")',
+            height: "600px"
+          }}>
           <h1 className="title">Supernaught</h1>
-          <span className="motto">We make games for fun</span>
+          <span className="banner-text">We make games for fun</span>
         </div>
         <Header startY={600} />
         <div className="content">

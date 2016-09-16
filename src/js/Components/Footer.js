@@ -10,10 +10,10 @@ class Footer extends Component {
               <h4>Contact us</h4>
               <div className="contact-info">
                 <h6 className="contact-name">Alfonz Montelibano</h6>
-                <p className="contact-detail">
+                <div className="contact-detail">
                   <i className="mdi mdi-email-outline"></i>
                   m.alfonz@gmail.com
-                </p>
+                </div>
                 <a
                   className="contact-detail"
                   href="http://alfonzm.github.io"
@@ -24,10 +24,10 @@ class Footer extends Component {
               </div>
               <div className="contact-info">
                 <h6 className="contact-name">Davy Jones Bolivar</h6>
-                <p className="contact-detail">
+                <div className="contact-detail">
                   <i className="mdi mdi-email-outline"></i>
                   davy.bolivar@gmail.com
-                </p>
+                </div>
                 <a
                   className="contact-detail"
                   href="http://davybolivar.github.io"
@@ -56,10 +56,10 @@ class Footer extends Component {
                   target="*">
                 </a>
               </div>
-              <p className="copyright-info">
+              <span className="copyright-info">
                 Copyright © 2016 Supernaught Games<br/>
                 Cebu City 6000, Cebu Philippines
-              </p>
+              </span>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 @import "utilities/variables";
 
 .banner-wrapper{
-  height: 600px;
+  padding: 0px 20px 0px 20px;
   background-color: #222;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
 
   & > *{
     z-index: 1;
@@ -24,19 +25,20 @@
     left: 0;
     top: 0;
     background-color: black;
-    opacity: .86;
+    opacity: .7;
   }
 }
 
 .title{
   font-size: 50px;
-  word-break: break-all;
+  word-break: break-word;
   text-align: center;
 }
 
-.motto{
+.banner-text{
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 header{

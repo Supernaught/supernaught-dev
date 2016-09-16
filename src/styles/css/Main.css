@@ -77,6 +77,15 @@ a.contact-detail:hover {
   color: Gray;
   font-size: 11px; }
 
+p {
+  padding: 0px 20px 0px 20px;
+  color: #222;
+  font-size: 18px;
+  text-indent: 50px;
+  line-height: 30px; }
+  p:first-letter {
+    color: #FF0054; }
+
 @media screen and (max-width: 600px) {
   footer > .content-wrapper > .content {
     width: 100%;
@@ -99,5 +108,10 @@ a.contact-detail:hover {
 
   .contact-detail > .mdi {
     display: none; } }
+.icon-wrapper {
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /*# sourceMappingURL=Main.css.map */
