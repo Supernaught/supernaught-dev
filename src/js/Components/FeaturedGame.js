@@ -18,8 +18,7 @@ class FeaturedGame extends Component {
       <Link
         className="featured-game"
         to={"/"+this.props.data.id}
-        style={{backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")'}}
-        onTouchStart="">
+        style={{backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")'}}>
         <h2 className="thumbnail-title">{this.props.data.name}</h2>
         <div className="thumbnail-category">{categories}</div>
         <div className="thumbnail-platform">{platforms}</div>
