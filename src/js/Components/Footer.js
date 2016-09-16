@@ -50,6 +50,11 @@ class Footer extends Component {
                   href="https://twitter.com/_supernaught"
                   target="*">
                 </a>
+                <a
+                  className="github-icon footer-icon mdi mdi-github-circle"
+                  href="https://github.com/Supernaught"
+                  target="*">
+                </a>
               </div>
               <p className="copyright-info">
                 Copyright © 2016 Supernaught Games<br/>
