@@ -5,12 +5,12 @@ import About from './js/Pages/About';
 import Game from './js/Pages/Game';
 import Home from './js/Pages/Home';
 import Main from './js/Main';
+import ReactGA from 'react-ga';
 
 // styles
 import './styles/css/index.css';
 
 // Google Analytics
-var ReactGA = require('react-ga');
 ReactGA.initialize('UA-84298907-1');
 
 function logPageView() {
