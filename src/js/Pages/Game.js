@@ -8,7 +8,7 @@ class Game extends Component {
   render() {
     return (
       <div className="Game page-component">
-        <Header startY={0} />
+        <Header startY={50} />
         Game Page {this.props.params.game}
       </div>
     );

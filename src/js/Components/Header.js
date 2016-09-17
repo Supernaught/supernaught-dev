@@ -13,16 +13,10 @@ class Header extends Component {
     };
   }
   componentDidMount(){
-    // if(this.props.startY > 0){
-      window.addEventListener('scroll', this.handleScroll);
-    // }else{
-    //   this.setState({ stickyTab: 'sticky' });
-    // }
+    window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount(){
-    if(this.props.startY > 0){
-      window.removeEventListener('scroll', this.handleScroll);
-    }
+    window.removeEventListener('scroll', this.handleScroll);
   }
   handleScroll(event){
     let scrollTop = event.srcElement.body.scrollTop;
@@ -59,8 +53,10 @@ class Header extends Component {
 
   }
   render() {
+    const startBelow = (!this.props.startBelow) ? '' : 'start-below'
     return (
-      <header className={this.state.stickyTab+ ' ' +this.state.hideTab}>
+      <header className={this.state.stickyTab+ ' ' +this.state.hideTab+ ' ' +
+                         startBelow}>
         <div className="nav-container">
           <h3 className="header-title">Supernaught</h3>
           <nav>

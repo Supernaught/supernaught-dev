@@ -5,6 +5,7 @@ import GameData from '../../datas/games.js';
 import Header from '../Components/Header';
 import FeaturedGame from '../Components/FeaturedGame';
 import '../../styles/css/Home.css';
+import '../../styles/css/Header.css';
 
 class Home extends Component {
   constructor(props) {
@@ -41,7 +42,9 @@ class Home extends Component {
           <h1 className="title">Supernaught</h1>
           <span className="banner-text">We make games for fun</span>
         </div>
-        <Header startY={600} />
+        <Header
+          startY={600}
+          startBelow={true}/>
         <div className="content">
           <div className="section-wrapper">
             <h3 className="section-label">Our games</h3>
