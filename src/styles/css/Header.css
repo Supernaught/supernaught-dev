@@ -15,6 +15,23 @@
 .glitch {
   position: relative; }
 
+.headroom {
+  z-index: 2 !important; }
+  .headroom.headroom--pinned > header {
+    background-color: #FF0054 !important;
+    z-index: 2; }
+    .headroom.headroom--pinned > header > .nav-container {
+      justify-content: space-between; }
+      .headroom.headroom--pinned > header > .nav-container > .header-title {
+        color: white;
+        display: block; }
+      .headroom.headroom--pinned > header > .nav-container a {
+        color: #222; }
+        .headroom.headroom--pinned > header > .nav-container a.active {
+          color: white; }
+        .headroom.headroom--pinned > header > .nav-container a:not(.active):hover {
+          color: LightPink; }
+
 header {
   padding: 0px 10px 0px 10px;
   width: 100%;
@@ -55,36 +72,6 @@ header {
         header .nav-container > nav > a:not(.active):hover {
           color: #222; }
         header .nav-container > nav > a:not(.active):active {
-          color: LightPink; }
-  header.sticky {
-    background-color: #FF0054;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: transform .2s ease-out;
-    -moz-transition: transform .2s ease-out;
-    -o-transition: transform .2s ease-out;
-    transition: transform .2s ease-out; }
-    header.sticky.hide-nav {
-      transform: translateY(-50px);
-      -webkit-transition: transform .2s ease-out;
-      -moz-transition: transform .2s ease-out;
-      -o-transition: transform .2s ease-out;
-      transition: transform .2s ease-out; }
-    header.sticky + * {
-      margin-top: 50px !important; }
-    header.sticky > .nav-container {
-      justify-content: space-between; }
-      header.sticky > .nav-container > .header-title {
-        color: white;
-        display: block; }
-      header.sticky > .nav-container a {
-        color: #222; }
-        header.sticky > .nav-container a.active {
-          color: white; }
-        header.sticky > .nav-container a:not(.active):hover {
           color: LightPink; }
 
 /*# sourceMappingURL=Header.css.map */

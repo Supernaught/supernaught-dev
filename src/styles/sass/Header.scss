@@ -1,5 +1,37 @@
 @import "utilities/variables";
 
+.headroom{
+  z-index: 2 !important;
+
+  &.headroom--pinned{
+    & > header{
+      background-color: $theme-color !important;
+      z-index: 2;
+
+      & > .nav-container{
+        justify-content: space-between;
+
+        & > .header-title{
+          color: white;
+          display: block;
+        }
+
+        & a{
+          color: #222;
+
+          &.active{
+            color: white;
+          }
+
+          &:not(.active):hover{
+            color: LightPink;
+          }
+        }
+      }
+    }
+  }
+}
+
 header{
   padding: 0px 10px 0px 10px;
   width: 100%;
@@ -59,54 +91,6 @@ header{
           &:active{
             color: LightPink;
           }
-        }
-      }
-    }
-  }
-
-  &.sticky{
-    background-color: $theme-color;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    -webkit-backface-visibility: hidden;
-
-    -webkit-transition: transform .2s ease-out;
-       -moz-transition: transform .2s ease-out;
-         -o-transition: transform .2s ease-out;
-            transition: transform .2s ease-out;
-
-    &.hide-nav{
-      transform: translateY(-50px);
-
-      -webkit-transition: transform .2s ease-out;
-         -moz-transition: transform .2s ease-out;
-           -o-transition: transform .2s ease-out;
-              transition: transform .2s ease-out;
-    }
-
-    & + *{
-      margin-top: 50px !important;
-    }
-
-    & > .nav-container{
-      justify-content: space-between;
-
-      & > .header-title{
-        color: white;
-        display: block;
-      }
-
-      & a{
-        color: #222;
-
-        &.active{
-          color: white;
-        }
-
-        &:not(.active):hover{
-          color: LightPink;
         }
       }
     }

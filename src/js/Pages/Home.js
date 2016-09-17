@@ -44,7 +44,8 @@ class Home extends Component {
         </div>
         <Header
           startY={600}
-          startBelow={true}/>
+          startBelow={true}
+          startPin={600}/>
         <div className="content">
           <div className="section-wrapper">
             <h3 className="section-label">Our games</h3>
