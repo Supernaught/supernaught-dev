@@ -45,7 +45,29 @@ class About extends Component {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <h3 className="section-label">Who are they?</h3>
+          <h3 className="section-label">Who is Supernaught?</h3>
+          <div className="whois-container">
+            <span className="whois-card">
+              <img
+                src="https://pbs.twimg.com/profile_images/701035778625769472/c2O99ywD.jpg"
+                alt="Alfonz"/>
+              <h5>Alfonz Montelibano</h5>
+              <i>Game Coder</i>
+              <q>
+                Ut enim ad minim veniam, quis nostrud exercitation.
+              </q>
+            </span>
+            <span className="whois-card">
+              <img
+                src="https://pbs.twimg.com/profile_images/746306119530774533/VLkorw-F_400x400.jpg"
+                alt="Davy"/>
+              <h5>Davy Jones Bolivar</h5>
+              <i>Game Visuals</i>
+                <q>
+                  The quick brown fox jumped over the lazy dog.
+                </q>
+            </span>
+          </div>
         </div>
       </div>
     );

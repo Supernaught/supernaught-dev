@@ -24,9 +24,10 @@ class Header extends Component {
   }
   render() {
     const startPin = (this.props.startPin === undefined) ? 0 : this.props.startPin;
+    const startBelow = (!this.props.startBelow) ? '' : 'start-below'
     return (
       <HeadRoom pinStart={startPin}>
-        <header>
+        <header className={startBelow}>
           <div className="nav-container">
             <h3 className="header-title">Supernaught</h3>
             <nav>

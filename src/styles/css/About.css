@@ -1,4 +1,49 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/fonts/FuturaStd-Bold.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Light.otf);
+  font-weight: 200; }
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url(../assets/fonts/Inconsolata-Regular.ttf); }
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
+.glitch {
+  position: relative; }
+
 .about-content {
-  padding: 0px 0px 80px 0px; }
+  padding: 0px 0px 40px 0px; }
+
+.whois-container {
+  display: flex;
+  justify-content: space-around; }
+
+.whois-card {
+  min-width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center; }
+  .whois-card > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+  .whois-card > h5 {
+    color: #222;
+    margin-bottom: 0px; }
+  .whois-card > i {
+    color: #FF0054; }
+  .whois-card > q {
+    padding: 30px 0px 30px 0px;
+    text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .whois-container {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=About.css.map */

@@ -43,7 +43,6 @@ class Home extends Component {
           <span className="banner-text">We make games for fun</span>
         </div>
         <Header
-          startY={600}
           startBelow={true}
           startPin={600}/>
         <div className="content">
