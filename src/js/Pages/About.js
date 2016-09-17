@@ -19,15 +19,6 @@ class About extends Component {
           <span className="banner-text">can a squirrel fly next to a bald eagle?</span>
         </div>
         <div className="content about-content">
-          <h3 className="section-label">
-            About Supernaught...
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
           <span className="icon-wrapper">
             <a
               className="facebook-icon footer-icon mdi mdi-facebook"
@@ -45,6 +36,15 @@ class About extends Component {
               target="*">
             </a>
           </span>
+          <h3 className="section-label">
+            About Supernaught...
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
           <h3 className="section-label">Who are they?</h3>
         </div>
       </div>

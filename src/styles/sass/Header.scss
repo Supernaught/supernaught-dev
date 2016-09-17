@@ -37,7 +37,7 @@ header{
       flex-direction: row;
 
       & > a{
-        color: #222;
+        color: Gray;
         font-size: 18px;
         text-decoration: none;
         text-transform: uppercase;
@@ -53,7 +53,7 @@ header{
 
         &:not(.active){
           &:hover{
-            color: LightGray;
+            color: #222;
           }
 
           &:active{

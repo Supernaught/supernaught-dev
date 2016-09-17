@@ -138,7 +138,8 @@
     color: #222;
     text-decoration: none; }
     .game-list > li > a:hover, .game-list > li > a:active {
-      color: #FF0054; }
+      color: #FF0054;
+      font-family: "Inconsolata-Bold"; }
   .game-list > li:not(:first-child):before {
     content: "■";
     color: #FF0054;

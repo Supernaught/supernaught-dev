@@ -41,7 +41,7 @@ header {
       display: flex;
       flex-direction: row; }
       header .nav-container > nav > a {
-        color: #222;
+        color: Gray;
         font-size: 18px;
         text-decoration: none;
         text-transform: uppercase;
@@ -53,7 +53,7 @@ header {
         header .nav-container > nav > a:not(:last-child) {
           margin-right: 20px; }
         header .nav-container > nav > a:not(.active):hover {
-          color: LightGray; }
+          color: #222; }
         header .nav-container > nav > a:not(.active):active {
           color: LightPink; }
   header.sticky {
