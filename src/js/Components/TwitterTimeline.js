@@ -15,11 +15,13 @@ class TwitterTimeline extends Component {
         className="twitter-widget"
         style={{
                 width: this.props.widgetWidth,
-                padding: "50px 0px 50px 0px",
-                margin: "0 auto"
+                padding: "30px 0px 30px 0px",
+                margin: "0 auto",
               }}>
         <a
           className="twitter-timeline"
+          data-tweet-limit="5"
+          data-link-color="#FF0054"
           href={this.props.accountLink}/>
       </div>
     );

@@ -69,6 +69,9 @@ class About extends Component {
                 </q>
             </span>
           </div>
+          <h3 className="section-label">
+            What are we up to...
+          </h3>
           <TwitterTimeline
             widgetWidth="50vw"
             widgetLink="https://platform.twitter.com/widgets.js"
