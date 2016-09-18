@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Components/Header';
+import TwitterTimeline from '../Components/TwitterTimeline';
 import '../../styles/css/About.css';
 
 class About extends Component {
@@ -68,6 +69,11 @@ class About extends Component {
                 </q>
             </span>
           </div>
+          <TwitterTimeline
+            widgetWidth="50vw"
+            widgetLink="https://platform.twitter.com/widgets.js"
+            accountLink="https://twitter.com/_supernaught"
+          />
         </div>
       </div>
     );

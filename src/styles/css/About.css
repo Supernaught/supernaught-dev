@@ -43,6 +43,9 @@
     text-align: center; }
 
 @media screen and (max-width: 600px) {
+  .twitter-widget {
+    width: 100% !important; }
+
   .whois-container {
     flex-direction: column; } }
 
