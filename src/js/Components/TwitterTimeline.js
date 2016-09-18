@@ -12,6 +12,7 @@ class TwitterTimeline extends Component {
   render() {
     return (
       <div
+        className="twitter-widget"
         style={{
                 width: this.props.widgetWidth,
                 padding: "50px 0px 50px 0px",
