@@ -38,7 +38,7 @@ class About extends Component {
             </a>
           </span>
           <h3 className="section-label">
-            About Supernaught...
+            About
           </h3>
           <p>
             Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do
@@ -53,7 +53,7 @@ class About extends Component {
                 src="https://pbs.twimg.com/profile_images/701035778625769472/c2O99ywD.jpg"
                 alt="Alfonz"/>
               <h5>Alfonz Montelibano</h5>
-              <i>Game Coder</i>
+              <i>Code</i>
               <q>
                 Ut enim ad minim veniam, quis nostrud exercitation.
               </q>
@@ -63,14 +63,14 @@ class About extends Component {
                 src="https://pbs.twimg.com/profile_images/746306119530774533/VLkorw-F_400x400.jpg"
                 alt="Davy"/>
               <h5>Davy Jones Bolivar</h5>
-              <i>Game Visuals</i>
+              <i>Art</i>
                 <q>
                   The quick brown fox jumped over the lazy dog.
                 </q>
             </span>
           </div>
           <h3 className="section-label">
-            What are we up to...
+            What we've been up to
           </h3>
           <TwitterTimeline
             widgetWidth="50vw"

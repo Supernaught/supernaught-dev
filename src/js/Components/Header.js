@@ -32,7 +32,7 @@ class Header extends Component {
             <h3 className="header-title">Supernaught</h3>
             <nav>
               <IndexLink to="/" activeClassName="active">Home</IndexLink>
-              <Link to="/about" activeClassName="active">About Us</Link>
+              <Link to="/about" activeClassName="active">About</Link>
             </nav>
           </div>
         </header>
