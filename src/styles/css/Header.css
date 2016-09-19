@@ -26,9 +26,9 @@
         color: white;
         display: block; }
       .headroom.headroom--pinned > header > .nav-container a {
-        color: #222; }
+        color: white; }
         .headroom.headroom--pinned > header > .nav-container a.active {
-          color: white; }
+          color: #222; }
         .headroom.headroom--pinned > header > .nav-container a:not(.active):hover {
           color: LightPink; }
 
