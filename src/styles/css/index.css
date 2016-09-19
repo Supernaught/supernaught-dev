@@ -23,8 +23,7 @@ html, body {
   box-sizing: border-box; }
 
 .nav-container > nav a.active {
-  color: #FF0054;
-  font-family: "Inconsolata-Bold"; }
+  color: #FF0054; }
 
 .mdi:hover {
   color: #FF0054; }

@@ -69,8 +69,9 @@ header{
       flex-direction: row;
 
       & > a{
-        color: Gray;
-        font-size: 18px;
+        color: Lightgray;
+        font-family: $default-font;
+        font-size: 13px;
         text-decoration: none;
         text-transform: uppercase;
         display: flex;
