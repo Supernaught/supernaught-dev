@@ -72,7 +72,77 @@ exports.games = {
 			]
 		},
 		{
-			"name": "3rd game featured",
+			"name": "Pong Knights",
+			"id": "3rd-game-featured",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "JUMPR",
+			"id": "3rd-game-featured",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Adrift",
 			"id": "3rd-game-featured",
 			"description": "GAME OF AWSUM DAYUM",
 			"categories": [
@@ -109,7 +179,7 @@ exports.games = {
 	],
 	"other" : [
 		{
-			"name": "Mono",
+			"name": "Blockade Arcade",
 			"id": "mono",
 			"description": "GAME OF AWSUM DAYUM",
 			"categories": [
@@ -144,7 +214,7 @@ exports.games = {
 			]
 		},
 		{
-			"name": "Necromorph",
+			"name": "Grimlock",
 			"id": "necromorph",
 			"description": "GAME OF AWSUM DAYUM",
 			"categories": [
@@ -179,7 +249,322 @@ exports.games = {
 			]
 		},
 		{
-			"name": "Blockade Arcade",
+			"name": "Mono",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Withdrawal",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Aerith",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Gunslinger",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Cube Knights",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Nest",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Tennis",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Pulse",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Seumas & Ritchie",
+			"id": "blockade-arcade",
+			"description": "GAME OF AWSUM DAYUM",
+			"categories": [
+				"Platformer",
+				"Action",
+				"Ludum Dare"
+			],
+			"platforms": [
+				"windows", "apple"
+			],
+			"image_count": 3,
+			"video_count": 1,
+			"links": [
+				{
+					"name": "Play on itch.io",
+					"link": "http://www.itch.io/link",
+				},
+				{
+					"name": "Ludum Dare page",
+					"link": "www.ld.com",
+				},
+			],
+			"reviews": [
+				{
+					"title": "Forbes",
+					"link": "www.forbes.com"
+				},
+				{
+					"title": "French Guy",
+					"link": "www.french.com"
+				},
+			]
+		},
+		{
+			"name": "Above",
 			"id": "blockade-arcade",
 			"description": "GAME OF AWSUM DAYUM",
 			"categories": [
