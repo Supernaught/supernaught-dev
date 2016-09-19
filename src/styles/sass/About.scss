@@ -38,11 +38,12 @@
   }
 }
 
+.twitter-widget{
+  width: 80%;
+  min-height: 400px;
+}
 
 @media screen and (max-width: $mobile-width-scope) {
-  .twitter-widget{
-    width: 100% !important;
-  }
   .whois-container{
     flex-direction: column;
   }

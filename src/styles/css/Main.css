@@ -78,15 +78,14 @@ a.contact-detail:hover {
   font-size: 11px; }
 
 p {
-  padding: 0px 20px 0px 20px;
   color: #222;
   font-size: 18px;
-  text-indent: 50px;
   line-height: 30px; }
-  p:first-letter {
-    color: #FF0054; }
 
 @media screen and (max-width: 600px) {
+  p {
+    text-align: center; }
+
   footer > .content-wrapper > .content {
     width: 100%;
     flex-direction: column; }

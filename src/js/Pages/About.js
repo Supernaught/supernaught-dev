@@ -70,10 +70,9 @@ class About extends Component {
             </span>
           </div>
           <h3 className="section-label">
-            What we've been up to
+            What weve been up to
           </h3>
           <TwitterTimeline
-            widgetWidth="50vw"
             widgetLink="https://platform.twitter.com/widgets.js"
             accountLink="https://twitter.com/_supernaught"
           />

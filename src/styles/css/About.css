@@ -42,10 +42,11 @@
     padding: 30px 0px 30px 0px;
     text-align: center; }
 
-@media screen and (max-width: 600px) {
-  .twitter-widget {
-    width: 100% !important; }
+.twitter-widget {
+  width: 80%;
+  min-height: 400px; }
 
+@media screen and (max-width: 600px) {
   .whois-container {
     flex-direction: column; } }
 
