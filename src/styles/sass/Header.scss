@@ -69,11 +69,12 @@ header{
       flex-direction: row;
 
       & > a{
-        color: Lightgray;
+        color: Gray;
         font-family: $default-font;
         font-size: 13px;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 2px;
         display: flex;
         align-items: center;
         justify-content: center;
