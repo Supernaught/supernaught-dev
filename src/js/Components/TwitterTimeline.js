@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class TwitterTimeline extends Component {
   componentDidMount() {
     let list = document.getElementsByTagName('script');
-
+    
     // Remove twitter script if found
-    for (var x of list) {
-      if(x.src === this.props.widgetLink) {
-        x.parentNode.removeChild(x);
+    for(let i=0; i<list.length; i++) {
+      if(list[i].src === this.props.widgetLink) {
+        list[i].parentNode.removeChild(list[i]);
       }
     }
 
