@@ -73,6 +73,7 @@ class About extends Component {
             What weve been up to
           </h3>
           <TwitterTimeline
+            widgetWidth="80%"
             widgetLink="https://platform.twitter.com/widgets.js"
             accountLink="https://twitter.com/_supernaught"
           />

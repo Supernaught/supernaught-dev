@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 
 class TwitterTimeline extends Component {
   componentDidMount() {
-    const script = document.createElement("script");
+    let list = document.getElementsByTagName('script');
 
+    // Remove twitter script if found
+    for (var x of list) {
+      if(x.src === this.props.widgetLink) {
+        x.parentNode.removeChild(x);
+      }
+    }
+
+    // Replace twitter script with new one
+    const script = document.createElement("script");
     script.src = this.props.widgetLink;
     script.async = true;
-
     document.body.appendChild(script);
+
   }
   render() {
     const widgetWidth = (!this.props.widgetWidth) ? "100%"
@@ -15,9 +24,8 @@ class TwitterTimeline extends Component {
     return (
       <div
         className="twitter-widget"
-
         style={{
-                width: this.props.widgetWidth,
+                width: widgetWidth,
                 padding: "30px 0px 30px 0px",
                 margin: "0 auto",
               }}>
