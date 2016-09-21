@@ -12,9 +12,7 @@ class Home extends Component {
     super(props);
     this.state = {
       games: [],
-      vHeight: window.innerHeight ||
-               document.documentElement.clientHeight ||
-               document.body.clientHeight
+      vHeight: 0
     };
   }
 
