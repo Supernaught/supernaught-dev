@@ -11,15 +11,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      games: [],
-      vHeight: 0
+      games: []
     };
-  }
-
-  componentWillMount() {
-    this.setState({vHeight: window.innerHeight ||
-                            document.documentElement.clientHeight ||
-                            document.body.clientHeight});
   }
 
   render() {
@@ -44,14 +37,14 @@ class Home extends Component {
           className="banner-wrapper"
           style={{
             backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")',
-            height: this.state.vHeight
+            height: "600px"
           }}>
           <h1 className="title">Supernaught</h1>
           <span className="banner-text">We make games for fun</span>
         </div>
         <Header
           startBelow={true}
-          startPin={this.state.vHeight}/>
+          startPin={600}/>
         <div className="content">
           <div className="section-wrapper">
             <h3 className="section-label">Our games</h3>
