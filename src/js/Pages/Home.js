@@ -18,15 +18,7 @@ class Home extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this));
-  }
-
-  handleResize(){
+  componentWillMount() {
     this.setState({vHeight: window.innerHeight ||
                             document.documentElement.clientHeight ||
                             document.body.clientHeight});
@@ -54,8 +46,7 @@ class Home extends Component {
           className="banner-wrapper"
           style={{
             backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")',
-            height: "100vh",
-            maxHeight: "100vh"
+            height: this.state.vHeight
           }}>
           <h1 className="title">Supernaught</h1>
           <span className="banner-text">We make games for fun</span>
