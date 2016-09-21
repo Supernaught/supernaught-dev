@@ -11,8 +11,25 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      games: []
+      games: [],
+      vHeight: window.innerHeight ||
+               document.documentElement.clientHeight ||
+               document.body.clientHeight
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
+  handleResize(){
+    this.setState({vHeight: window.innerHeight ||
+                            document.documentElement.clientHeight ||
+                            document.body.clientHeight});
   }
 
   render() {
@@ -37,14 +54,15 @@ class Home extends Component {
           className="banner-wrapper"
           style={{
             backgroundImage: 'url("http://i.imgur.com/ItnrXPm.png")',
-            height: "600px"
+            height: "100vh",
+            maxHeight: "100vh"
           }}>
           <h1 className="title">Supernaught</h1>
           <span className="banner-text">We make games for fun</span>
         </div>
         <Header
           startBelow={true}
-          startPin={600}/>
+          startPin={this.state.vHeight}/>
         <div className="content">
           <div className="section-wrapper">
             <h3 className="section-label">Our games</h3>
