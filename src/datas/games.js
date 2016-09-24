@@ -75,7 +75,7 @@ exports.games = {
 		},
 		{
 			"name": "Pong Knights",
-			"id": "3rd-game-featured",
+			"id": "pong-knights",
 			"description": "GAME OF AWSUM DAYUM",
 			"featured": 1,
 			"categories": [
@@ -111,7 +111,7 @@ exports.games = {
 		},
 		{
 			"name": "JUMPR",
-			"id": "3rd-game-featured",
+			"id": "jumpr",
 			"description": "GAME OF AWSUM DAYUM",
 			"featured": 1,
 			"categories": [
@@ -146,8 +146,8 @@ exports.games = {
 			]
 		},
 		{
-			"name": "Adrift",
-			"id": "3rd-game-featured",
+			"name": "Other game",
+			"id": "other-game",
 			"description": "GAME OF AWSUM DAYUM",
 			"featured": 0,
 			"categories": [

@@ -8,33 +8,29 @@ import '../../styles/css/Home.css';
 import '../../styles/css/Header.css';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      games: []
-    };
-  }
-
   render() {
-    const gameDataList = GameData.games;
-    const featuredGames = gameDataList.gameList.filter((game) => {
+    const gameDataList = GameData.games.gameList;
+
+    // Filter games between 'featured' and 'others'
+    const featuredGames = gameDataList.filter((game) => {
       return (game.featured === 1)? true : false;
     });
 
-    const otherGames = gameDataList.gameList.filter((game) => {
+    const otherGames = gameDataList.filter((game) => {
       return (game.featured === 0)? true : false;
     });
 
+    // Create Component for each filtered list
     const featuredGameList = featuredGames.map((game) => {
       return (
         <FeaturedGame key={ShortId.generate()} data={game} />
       )
     });
 
-    const otherList = otherGames.map((game) => {
+    const otherGameList = otherGames.map((game) => {
       return (
         <li key={ShortId.generate()}>
-          <Link to={'/'+game.id}>{game.id}</Link>
+          <Link to={'/'+game.id}>{game.name}</Link>
         </li>
       )
     });
@@ -63,7 +59,7 @@ class Home extends Component {
           <div className="section-wrapper">
             <h3 className="section-label">And few others...</h3>
             <ul className="game-list">
-              {otherList}
+              {otherGameList}
             </ul>
           </div>
         </div>

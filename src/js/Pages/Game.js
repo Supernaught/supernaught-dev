@@ -3,13 +3,8 @@ import Header from '../Components/Header';
 import GameData from '../../datas/games.js';
 
 class Game extends Component {
-  constructor(props) {
-    super(props);
-
-  }
   componentDidMount() {
     window.scrollTo(0, 0);
-
     // const gameDataList = GameData.games;
     // const name = gameDataList.featured.filter((element) => {
     //   return (element.id === this.props.params.game) ? true : false;
@@ -17,6 +12,12 @@ class Game extends Component {
     // console.log(name[0]);
   }
   render() {
+    const gameData = GameData.games.gameList.filter((element) => {
+      return (element.id === this.props.params.game) ? true : false;
+    });
+
+    console.log(gameData[0]);
+
     return (
       <div className="Game page-component">
         <Header startY={50} />
@@ -26,7 +27,7 @@ class Game extends Component {
             backgroundImage: 'url("http://i.imgur.com/ibzBYL8.jpg")',
             height: "350px"
           }}>
-          <h1 className="title">{this.props.params.game}</h1>
+          <h1 className="title">{gameData[0].name}</h1>
         </div>
       </div>
     );
