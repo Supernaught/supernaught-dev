@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../assets/fonts/FuturaStd-Bold.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'Futura-Light';
+  src: url(../assets/fonts/FuturaStd-Light.otf);
+  font-weight: 200; }
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url(../assets/fonts/Inconsolata-Regular.ttf); }
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src: url(../assets/fonts/Inconsolata-Bold.ttf); }
+.glitch {
+  position: relative; }
+
+/*# sourceMappingURL=Game.css.map */

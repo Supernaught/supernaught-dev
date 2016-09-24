@@ -17,16 +17,24 @@ class Home extends Component {
 
   render() {
     const gameDataList = GameData.games;
-    const featuredGameList = gameDataList.featured.map((game) => {
+    const featuredGames = gameDataList.gameList.filter((game) => {
+      return (game.featured === 1)? true : false;
+    });
+
+    const otherGames = gameDataList.gameList.filter((game) => {
+      return (game.featured === 0)? true : false;
+    });
+
+    const featuredGameList = featuredGames.map((game) => {
       return (
         <FeaturedGame key={ShortId.generate()} data={game} />
       )
     });
 
-    const otherList = gameDataList.other.map((game) => {
+    const otherList = otherGames.map((game) => {
       return (
         <li key={ShortId.generate()}>
-          <Link to={'/'+game.id}>{game.name}</Link>
+          <Link to={'/'+game.id}>{game.id}</Link>
         </li>
       )
     });
