@@ -18,7 +18,7 @@ exports.games = {
 			"links": [
 				{
 					"name": "Play on itch.io",
-					"link": "http://www.itch.io/link",
+					"link": "https://supernaught.itch.io/necromorph",
 				},
 				{
 					"name": "Ludum Dare page",

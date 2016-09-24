@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Components/Header';
 import GameData from '../../datas/games.js';
+import '../../styles/css/Game.css';
 
 class Game extends Component {
   componentDidMount() {
@@ -28,6 +29,11 @@ class Game extends Component {
             height: "350px"
           }}>
           <h1 className="title">{gameData[0].name}</h1>
+          <a className="play-button"
+             href={gameData[0].links[0].link}
+             target="*">
+             {gameData[0].links[0].name}
+          </a>
         </div>
       </div>
     );
