@@ -28,7 +28,6 @@ class Game extends Component {
     let gameScreenshot = [];
     for(let i = 1; i <= gameData[0].image_count; i++){
       const url = "../../datas/screenshot/"+gameData[0].id+"/"+i+".png";
-      // gameScreenshot.push(<div key={ShortId.generate()}>{url}</div>);
       gameScreenshot.push(
         <img
           key={ShortId.generate()}
@@ -55,6 +54,11 @@ class Game extends Component {
                 {gameDescription}
               </div>
               <div className="section media-wrapper">
+              <iframe
+                className="media-container"
+                frameBorder="0"
+                src="https://www.youtube.com/embed/90ZN8GWfmL0">
+              </iframe>
                 {gameScreenshot}
               </div>
             </div>

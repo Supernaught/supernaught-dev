@@ -17,7 +17,7 @@ exports.games = {
 			"platforms": [
 				"windows", "apple", "earth", "cellphone-iphone", "android"
 			],
-			"image_count": 3,
+			"image_count": 4,
 			"video_count": [
 				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
 			],
