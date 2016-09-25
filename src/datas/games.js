@@ -3,7 +3,11 @@ exports.games = {
 		{
 			"name": "Necromorph",
 			"id": "necromorph",
-			"description": "GAME OF AWSUM DAYUM",
+			"description": [
+				'The quick brown fox jumped over the lazy dog the quick brown fox Bacon pan cakes making bacon pancakes, bacon pancakes',
+				'Hey diddle diddle a cat on a fiddle the cow jumped over the moon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend quis leo vitae luctus. Integer mollis risus ut dolor laoreet volutpat. Sed vitae urna eget nunc posuere semper auctor vitae tortor. ',
+				'The quick brown fox jumped over the lazy dog the quick brown fox Bacon pan cakes making bacon pancakes, bacon pancakes Hey diddle diddle a cat on a fiddle the cow jumped over the moon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend quis leo vitae luctus. Integer mollis risus ut dolor laoreet volutpat. Sed vitae urna eget nunc posuere semper auctor vitae tortor. '
+			],
 			"featured": 1,
 			"categories": [
 				"Platformer",
@@ -14,7 +18,9 @@ exports.games = {
 				"windows", "apple", "earth", "cellphone-iphone", "android"
 			],
 			"image_count": 3,
-			"video_count": 1,
+			"video_count": [
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
+			],
 			"links": [
 				{
 					"name": "Play on itch.io",
@@ -39,7 +45,10 @@ exports.games = {
 		{
 			"name": "Hammerfall",
 			"id": "hammerfall",
-			"description": "GAME OF AWSUM DAYUM",
+			"description": [
+				'The quick brown fox jumped over the lazy dog the quick brown fox',
+				'Hey diddle diddle a cat on a fiddle the cow jumped over the moon'
+			],
 			"featured": 1,
 			"categories": [
 				"Platformer",
@@ -51,7 +60,10 @@ exports.games = {
 				"windows"
 			],
 			"image_count": 3,
-			"video_count": 1,
+			"video_count": [
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222',
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
+			],
 			"links": [
 				{
 					"name": "Play on itch.io",
@@ -76,7 +88,10 @@ exports.games = {
 		{
 			"name": "Pong Knights",
 			"id": "pong-knights",
-			"description": "GAME OF AWSUM DAYUM",
+			"description": [
+				'The quick brown fox jumped over the lazy dog the quick brown fox',
+				'Hey diddle diddle a cat on a fiddle the cow jumped over the moon'
+			],
 			"featured": 1,
 			"categories": [
 				"Platformer",
@@ -87,7 +102,10 @@ exports.games = {
 				"windows", "apple"
 			],
 			"image_count": 3,
-			"video_count": 1,
+			"video_count": [
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222',
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
+			],
 			"links": [
 				{
 					"name": "Play on itch.io",
@@ -112,7 +130,10 @@ exports.games = {
 		{
 			"name": "JUMPR",
 			"id": "jumpr",
-			"description": "GAME OF AWSUM DAYUM",
+			"description": [
+				'The quick brown fox jumped over the lazy dog the quick brown fox',
+				'Hey diddle diddle a cat on a fiddle the cow jumped over the moon'
+			],
 			"featured": 1,
 			"categories": [
 				"Platformer",
@@ -123,7 +144,10 @@ exports.games = {
 				"windows", "apple"
 			],
 			"image_count": 3,
-			"video_count": 1,
+			"video_count": [
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222',
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
+			],
 			"links": [
 				{
 					"name": "Play on itch.io",
@@ -148,7 +172,10 @@ exports.games = {
 		{
 			"name": "Other game",
 			"id": "other-game",
-			"description": "GAME OF AWSUM DAYUM",
+			"description": [
+				'The quick brown fox jumped over the lazy dog the quick brown fox',
+				'Hey diddle diddle a cat on a fiddle the cow jumped over the moon'
+			],
 			"featured": 0,
 			"categories": [
 				"Platformer",
@@ -159,7 +186,10 @@ exports.games = {
 				"windows", "apple"
 			],
 			"image_count": 3,
-			"video_count": 1,
+			"video_count": [
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222',
+				'https://www.youtube.com/watch?v=90ZN8GWfmL0#t=21.896222'
+			],
 			"links": [
 				{
 					"name": "Play on itch.io",

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Components/Header';
 import GameData from '../../datas/games.js';
+import ShortId from 'shortid';
 import { browserHistory } from 'react-router';
 import '../../styles/css/Game.css';
 
@@ -18,18 +19,45 @@ class Game extends Component {
 
   render() {
     const gameData = getGame(this.props.params.game);
+    const gameDescription = gameData[0].description.map((text) => {
+      return (
+        <p key={ShortId.generate()}>{text}</p>
+      )
+    });
+
+    let gameScreenshot = [];
+    for(let i = 1; i <= gameData[0].image_count; i++){
+      const url = "../../datas/screenshot/"+gameData[0].id+"/"+i+".png";
+      // gameScreenshot.push(<div key={ShortId.generate()}>{url}</div>);
+      gameScreenshot.push(
+        <img
+          key={ShortId.generate()}
+          src="http://i.imgur.com/nkij0zO.jpg">
+        </img>
+      );
+    }
 
     if(gameData[0]){
       return (
-        <div className="Game page-component">
+        <div className="Game content-wrapper">
           <Header startY={50} />
           <div
-            className="banner-wrapper"
+            className="game-banner"
             style={{
               backgroundImage: 'url("http://i.imgur.com/ibzBYL8.jpg")',
               height: "350px"
             }}>
-            <h1 className="title">{gameData[0].name}</h1>
+          </div>
+          <div className="content">
+            <div className="inline-section-wrapper">
+              <div className="section">
+                <h3>{gameData[0].name}</h3>
+                {gameDescription}
+              </div>
+              <div className="section media-wrapper">
+                {gameScreenshot}
+              </div>
+            </div>
           </div>
         </div>
       );

@@ -15,4 +15,36 @@
 .glitch {
   position: relative; }
 
+.inline-section-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.game-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.media-wrapper {
+  position: relative; }
+  .media-wrapper > img {
+    margin: 20px 10px 0px 10px;
+    width: 350px;
+    height: 250px;
+    object-fit: cover; }
+
+@media screen and (max-width: 600px) {
+  h3 {
+    text-align: center; }
+
+  .inline-section-wrapper {
+    flex-direction: column;
+    justify-content: center; }
+
+  .media-wrapper {
+    width: 100%; }
+    .media-wrapper > img {
+      margin: 0;
+      margin-top: 10px;
+      width: 100%; } }
+
 /*# sourceMappingURL=Game.css.map */

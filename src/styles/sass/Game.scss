@@ -1,1 +1,45 @@
 @import "utilities/variables";
+
+
+.inline-section-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-banner{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.media-wrapper{
+  position: relative;
+
+  & > img{
+    margin: 20px 10px 0px 10px;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: $mobile-width-scope) {
+  h3{
+    text-align: center;
+  }
+
+  .inline-section-wrapper{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .media-wrapper{
+    width: 100%;
+
+    & > img{
+      margin: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
