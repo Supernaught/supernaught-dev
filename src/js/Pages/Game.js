@@ -50,7 +50,7 @@ class Game extends Component {
           <div className="content">
             <div className="inline-section-wrapper">
               <div className="section">
-                <h3>{gameData[0].name}</h3>
+                <h3 className="section-label">{gameData[0].name}</h3>
                 {gameDescription}
               </div>
               <div className="section media-wrapper">
