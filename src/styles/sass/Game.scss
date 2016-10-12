@@ -21,7 +21,7 @@
   & > img, & > iframe{
     margin: 20px 0px 0px 10px;
     width: 100%;
-    min-height: 250px;
+    min-height: 200px;
     background-color: black;
     object-fit: contain;
     box-sizing: border-box;
@@ -46,6 +46,10 @@
       margin: 0;
       margin-top: 10px;
       width: 100%;
+    }
+
+    & > iframe{
+      margin-bottom: 10px;
     }
   }
 }
