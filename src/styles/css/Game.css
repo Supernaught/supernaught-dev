@@ -32,7 +32,7 @@
   .media-wrapper > img, .media-wrapper > iframe {
     margin: 20px 0px 0px 10px;
     width: 100%;
-    min-height: 200px;
+    min-height: 250px;
     background-color: black;
     object-fit: contain;
     box-sizing: border-box;
